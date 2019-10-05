@@ -1,0 +1,91 @@
+﻿
+/*.form-control1 {
+    width: 132px !important;
+    height: 30px;
+    Font-Size: 14px;
+}
+
+.form-control2 {
+    width: 65px !important;
+    height: 30px;
+    Font-Size: 14px;
+    text-align: right;
+}*/
+
+/*.lbllabel {
+    font-size: 14px;
+}*/
+
+/*@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 1200px !important;
+    }
+}*/
+
+.table thead {
+    background-color: #008bd8;
+    color: #fff;
+}
+
+#tblattendance {
+    font-size: 12px;
+}
+
+    #tblattendance tr td {
+        padding: 1px 10px !important;
+    }
+
+    #tblattendance tr th {
+        padding: 1px 10px !important;
+    }
+
+    #tblattendance thead {
+        background-color: #28a745 !important;
+    }
+
+h4, .h4 {
+    font-size: 20px !important;
+}
+
+.table thead th {
+    /*font-size: 15px;*/
+}
+
+.btn-primary {
+    color: #fff !important;
+}
+
+.table tbody td {
+    /*font-size: 12px;*/
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.modal-heading {
+    padding:0px 3px 2px 0px;
+    background-color: #2278bd;
+    font-variant: petite-caps;
+    font-weight: bold;
+    color: #ece7e7;
+    border-bottom: 3px solid #2f2f2f !important;
+}
+
+.fa-ban {
+    cursor: no-drop;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em !important;
+    border: 1px solid #c1c1c1 !important;
+    border-radius: 5px !important;
+}
+
+.table thead tr th {
+    vertical-align: top !important;
+}

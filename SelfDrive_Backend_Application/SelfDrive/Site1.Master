@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SelfDrive.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Self Drive Cars</title> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/components.css" rel="stylesheet" type="text/css"> 
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="../vendor/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet" />
+ 
+	<script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="../assets/js/core/app.js"></script>  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body> 
+     <form id="formmain" runat="server">
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="../assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+			<ul class="nav navbar-nav">
+				<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				 
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="../assets/images/placeholder.jpg" alt="">
+						<span>Victoria</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right"> 
+						<li><a href="#"><i class="icon-cog5"></i>Change Password</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="../assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+								<div class="media-body" style="vertical-align: middle;">
+									<span class="media-heading text-semibold">User Name</span>
+									 
+								</div>
+
+								 
+							</div>
+						</div>
+					</div> 
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">  
+								<li class="active"><a href="../index.aspx"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+								<li>
+									<a href="#"><i class="icon-stack2"></i> <span>Masters</span></a>
+									<ul>
+										<li><a href="/Masters/CompanyMaster.aspx">Company Master</a></li> 
+										<li><a href="/StateMaster.aspx">State Master</a></li>
+                                        <li><a href="/ServiceLocationMaster.aspx">Service Location Master</a></li>
+                                        <li><a href="/BranchMaster.aspx">Branch Master</a></li>
+                                        <li><a href="/VehicleSegmentMaster.aspx">Vehicle Segment</a></li>
+                                        <li><a href="/AccessoriesMaster.aspx">Accessories</a></li>
+                                        <li><a href="/VehicleMake.aspx">Vehicle Make</a></li>
+                                        <li><a href="/SupplierMaster.aspx">Supplier Master</a></li>
+                                        <li><a href="/VehicleMaster.aspx">Vehicle Master</a></li>
+                                        <li><a href="/Masters/PackageMaster.aspx">Package Master</a></li>
+									</ul>
+								</li>
+								 
+								 
+
+							</ul>
+						</div>
+					</div> 
+				</div>
+			</div> 
+             <div id="content-wrapper"> 
+                <div class="container-fluid">
+                    <div class="row">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+              
+					<div class="footer text-muted">
+						&copy; 2019. <a href="#">Selft Drive Cars</a> by <a href="http://hjsoftware.net" target="_blank">HJ Software Pvt. Ltd.</a>
+					</div> 
+		            </div> 
+                    </div>
+   </form>
+     <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <link href="../vendor/datatables/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+
+</body>
+</html>
+

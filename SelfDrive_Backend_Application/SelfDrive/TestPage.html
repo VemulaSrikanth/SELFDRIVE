@@ -1,0 +1,251 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" />
+    <meta name="author" />
+    <title>
+        ESI And EPF Management - Dashboard
+    </title>
+
+    <!-- Bootstrap core CSS-->
+
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    <!-- Page level plugin CSS-->
+    <script src="../scripts/bootstrap.js"></script>
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet" />
+
+    <!-- bootstrap-daterangepicker -->
+
+    <style>
+        /*.bg-dark {
+            background-color: #6c757d !important;
+        }*/
+    </style>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body id="page-top">
+    <form method="post" action="./index.aspx" id="formmain">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="X6Bu7Ph81x/DQQHdULUALT1kCCtXPY9hfni+fs+YfPPfDoHaCdxPfKw9Ms1Kvl4PnJfbVfG5pqV3PCpdKoa0OLHHf0NXmtQ/Q2Ed4lfiyxRn+xdYnG9ZHnbz2iyFj45vZwPHkvvkqzQJgKAQqDy8SA==" />
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formmain'];
+if (!theForm) {
+    theForm = document.formmain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+        </script>
+
+
+        <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+            <a class="navbar-brand mr-1" href="../index.aspx">ESI and EPF Management</a>
+
+            <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="input-group">
+            </div>
+            <!-- Navbar -->
+            <ul class="navbar-nav col-md-2 pull-right">
+                <li class="nav-item dropdown no-arrow" style="padding-top: 8px;">
+                    <span id="lblname" class="color">santosh</span>
+                    <span id="Label1"></span>
+
+                </li>
+                <li class="pull-right">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle fa-fw"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="../Changepassword.aspx"><span><i class="fa fa-unlock pull-right"></i>Change Password</span></a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+
+                            <a id="LinkButton2" class="dropdown-item" href="javascript:__doPostBack(&#39;ctl00$LinkButton2&#39;,&#39;&#39;)"><i class="fas fa-sign-out-alt pull-right"></i>Log Out</a>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div id="wrapper">
+
+                <!-- Sidebar -->
+                <ul class="sidebar navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.aspx">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li id="li_master" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Masters</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+                            <a class="dropdown-item" href="../Masters/companymaster.aspx">Company Master</a>
+                            <a class="dropdown-item" href="../Masters/employeemaster.aspx">Employee Master</a>
+
+                        </div>
+                    </li>
+                    <li id="li_transactions" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Transactions</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+                            <a class="dropdown-item" href="../Transactions/attendancedetails.aspx">Attendance </a>
+                            <a class="dropdown-item" href="../Transactions/salaryregister.aspx">Salary Register </a>
+                            <a class="dropdown-item" href="../Transactions/contractsalaryregister.aspx">Contract Salary Register </a>
+                            <a class="dropdown-item" href="../Transactions/pfregister.aspx">PF Register </a>
+                            <a class="dropdown-item" href="../Transactions/relieveandrejoin.aspx">Employee Relieve or Join </a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li id="li_accounts" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Accounts</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <h6 class="dropdown-header">Other Pages:</h6>
+
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li id="li_humanresource" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Human Resource</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+
+                            <a class="dropdown-item" href="../HumanResource/staff.aspx">Staff</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li id="li_reports" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Reports</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="../EPReports/form5.aspx">Form-5</a>
+                            <a class="dropdown-item" href="../EPReports/form10.aspx">Form-10</a>
+                            <a class="dropdown-item" href="../EPReports/form-7.aspx">Form-7</a>
+                            <a class="dropdown-item" href="../EPReports/Challanreport.aspx">Challan Report+Form-12A</a>
+                            <a class="dropdown-item" href="../EPReports/form6a.aspx">Form-6A</a>
+                            <a class="dropdown-item" href="../EPReports/form3a.aspx">Form-3A</a>
+                            <a class="dropdown-item" href="../EPReports/excel3a6a.aspx">Excel Form 3A,Form 6A</a>
+                            <a class="dropdown-item" href="../EPReports/empnoncontributiondays.aspx">Non-Contribution Days</a>
+                            <a class="dropdown-item" href="../EPReports/pfauditreport.aspx">PF Audit Report</a>
+                            <a class="dropdown-item" href="../EPReports/esiauditreport.aspx">ESI Audit Report</a>
+                            <a class="dropdown-item" href="../EPReports/InspectionReport.aspx">Inspection Report</a>
+                            <a class="dropdown-item" href="../EPReports/ecrreport.aspx">ECR Report</a>
+                            <a class="dropdown-item" href="../EPReports/breakcertificate.aspx">Break Certificate</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li id="li_adminactivity" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Admin Activity</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="../Admin/esipfperclimitinformation.aspx">ESI & PF Perc.& Limit</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li id="li_admin" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Admin</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="../Admin/userprofile.aspx">User Profile</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="content-wrapper">
+
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <table>
+                                <tr>
+                                    <td style="text-align:center; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                                        <h3>Welcome To ESI And EPF Management</h3>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="3DtdkBeom87PcJ66u1HU6eFXU0sK53yJ+Cm9I31HsNA20+SZIOO1aKjatMgakZfReIRO+K5yP+U3Ple1uz4uFK6e1M4LkjnMhuOqEQIFGLnEfejsLH2PttJrO8S0Rg6A" />
+        </div>
+    </form>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <link href="../vendor/datatables/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+
+
+
+    <!-- Visual Studio Browser Link -->
+    <script type="application/json" id="__browserLink_initializationData">
+        {"appName":"Chrome","requestId":"a27b86adf73248ed87a0a5255120284e"}
+    </script>
+    <script type="text/javascript" src="http://localhost:54845/a67e31b9086e443a8f2a4f9809cd31dc/browserLink" async="async"></script>
+    <!-- End Browser Link -->
+
+</body>
+</html>
